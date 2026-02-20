@@ -5,8 +5,8 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<title>SvelteKit + Cloudflare | IA Mod</title>
-		<meta name="description" content="Desplegado con éxito mediante Cloudflare Pages" />
+		<title>SvelteKit | Modificado con IA ✨</title>
+		<meta name="description" content="Proyecto optimizado por Inteligencia Artificial para Cloudflare Pages" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +15,42 @@
 		%sveltekit.head%
 
 		<style>
-			/* Reset básico y fuente global */
 			:root {
 				font-family: 'Inter', sans-serif;
-				background-color: #f9fafb;
+				background-color: #f3f4f6;
 				color: #111827;
 			}
 			body {
 				margin: 0;
 				padding: 0;
 				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+			/* Estilo para el aviso de IA */
+			.ia-badge {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background: rgba(255, 255, 255, 0.8);
+				backdrop-filter: blur(8px);
+				padding: 8px 16px;
+				border-radius: 20px;
+				border: 1px solid #e5e7eb;
+				font-size: 0.85rem;
+				font-weight: 600;
+				color: #4f46e5;
+				box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+				z-index: 9999;
+				pointer-events: none;
 			}
 		</style>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
+		
+		<div class="ia-badge">
+			✨ Modificado con IA
+		</div>
 	</body>
 </html>
